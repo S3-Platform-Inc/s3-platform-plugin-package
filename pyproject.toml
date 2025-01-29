@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "s3-platform-plugin-package"
+description = "Bleeding edge cookiecutter template to create new S3Platform plugin python packages"
+version = "0.1.0"
+readme = "README.md"
+authors = [
+  "Roman Lupashko <lupashcko.rom@yandex.ru>"
+]
+
+license = "MIT"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+cookiecutter = "^2.6"
+jinja2-git = "^1.4"
+lice = "^0.6"
+
+
+[tool.poetry.group.test.dependencies]
+binaryornot = "^0.4"
+tomli = "^2.2"
+
+wemake-python-styleguide = "^0.19"
+flake8-pytest-style = "^2.0"
+nitpick = "^0.35"
+
+pytest = "^8.3"
+pytest-randomly = "^3.16"
+pytest-cookies = "^0.7"
+
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style.toml"

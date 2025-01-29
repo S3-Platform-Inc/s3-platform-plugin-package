@@ -1,0 +1,24 @@
+{
+  "full_name": "Roman Lupashko",
+  "email": "lupashko@gmail.com",
+  "github_username": "CuberHuber",
+
+  "source_uniq_name": "example",
+  "source_full_name": "Example Source Name",
+  "payload_name": "{{ cookiecutter.source_full_name.replace(' ', '') }}Payload",
+
+  "project_name": "s3p-plugin-parser-{{ cookiecutter.source_uniq_name }}",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace('-', '_') }}",
+  "project_short_description": "A repository that provides a {{ cookiecutter.source_full_name }} S3Platform Plugin.",
+  "version": "0.1.0",
+  "platform_version": "0.2.10",
+  "plugin_version": "3.0",
+
+  "use_pytest": "y",
+  "use_selenium": "n",
+  "with_test_data": "y",
+  "create_author_file": "y",
+
+  "open_source_license": ["MIT license", "Not open source"],
+  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_name.lower() }}"
+}
